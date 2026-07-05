@@ -1,2 +1,6 @@
 [2026-07-05 22:49:10,879] INFO in main: Starting LockMate application bootstrap...
 [2026-07-05 22:49:11,041] INFO in main: LockMate UI initialized successfully.
+[2026-07-05 23:21:07,514] INFO in main: Starting LockMate application bootstrap...
+[2026-07-05 23:21:08,021] INFO in splash: Splash screen initialized with tagline: 'One Vault. Complete Protection.'
+[2026-07-05 23:21:08,022] INFO in main: LockMate UI initialized successfully.
+[2026-07-05 23:21:11,034] INFO in login: Login screen displayed.

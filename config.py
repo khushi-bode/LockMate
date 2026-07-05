@@ -3,6 +3,8 @@ from pathlib import Path
 # Base directories
 BASE_DIR = Path(__file__).resolve().parent
 LOGS_DIR = BASE_DIR / "logs"
+DATA_DIR = BASE_DIR / "data"
+DB_PATH = DATA_DIR / "lockmate.db"
 ASSETS_DIR = BASE_DIR / "assets"
 IMAGES_DIR = ASSETS_DIR / "images"
 LOGO_PATH = IMAGES_DIR / "logo.png"
@@ -15,11 +17,19 @@ WINDOW_HEIGHT = 800
 # UI Settings
 SPLASH_DURATION = 3000
 LOGO_SIZE = (120, 120)
+SIDEBAR_WIDTH = 250
+ENTRY_WIDTH = 300
+ENTRY_HEIGHT = 40
+BUTTON_WIDTH = 300
+BUTTON_HEIGHT = 40
 
 # Fonts
 TITLE_FONT_SIZE = 36
 TAGLINE_FONT_SIZE = 14
 LOGIN_TITLE_FONT_SIZE = 32
+LABEL_FONT_SIZE = 14
+ENTRY_FONT_SIZE = 14
+BUTTON_FONT_SIZE = 16
 
 # Colors
 TAGLINE_COLOR = "gray"

@@ -3,7 +3,7 @@ from app.utils.logger import logger
 from app.security.auth import AuthService
 import config
 
-class LoginScreen(ctk.CTkFrame):
+class RegisterScreen(ctk.CTkFrame):
     def __init__(self, master, **kwargs):
         super().__init__(master, fg_color="transparent", **kwargs)
         
@@ -19,7 +19,7 @@ class LoginScreen(ctk.CTkFrame):
         # Title
         self.title_label = ctk.CTkLabel(
             self.content_frame, 
-            text="Login to LockMate", 
+            text="Create Master Account", 
             font=ctk.CTkFont(size=config.LOGIN_TITLE_FONT_SIZE, weight="bold")
         )
         self.title_label.grid(row=0, column=0, pady=(40, 10), padx=40)
@@ -40,7 +40,7 @@ class LoginScreen(ctk.CTkFrame):
         
         # Password Container
         self.password_frame = ctk.CTkFrame(self.content_frame, fg_color="transparent")
-        self.password_frame.grid(row=3, column=0, pady=(0, 10), padx=40)
+        self.password_frame.grid(row=3, column=0, pady=(0, 30), padx=40)
         
         self.password_entry = ctk.CTkEntry(
             self.password_frame, 
@@ -61,39 +61,31 @@ class LoginScreen(ctk.CTkFrame):
         )
         self.show_password_btn.pack(side="left")
         
-        # Remember Me
-        self.remember_me_checkbox = ctk.CTkCheckBox(
-            self.content_frame, 
-            text="Remember Me",
-            font=ctk.CTkFont(size=config.LABEL_FONT_SIZE)
-        )
-        self.remember_me_checkbox.grid(row=4, column=0, sticky="w", pady=(0, 20), padx=40)
-        
-        # Login Button
-        self.login_btn = ctk.CTkButton(
-            self.content_frame,
-            text="Login",
-            width=config.BUTTON_WIDTH,
-            height=config.BUTTON_HEIGHT,
-            font=ctk.CTkFont(size=config.BUTTON_FONT_SIZE, weight="bold"),
-            command=self.handle_login
-        )
-        self.login_btn.grid(row=5, column=0, pady=(0, 10), padx=40)
-        
         # Register Button
         self.register_btn = ctk.CTkButton(
             self.content_frame,
-            text="Create an Account",
+            text="Register",
+            width=config.BUTTON_WIDTH,
+            height=config.BUTTON_HEIGHT,
+            font=ctk.CTkFont(size=config.BUTTON_FONT_SIZE, weight="bold"),
+            command=self.handle_register
+        )
+        self.register_btn.grid(row=4, column=0, pady=(0, 10), padx=40)
+        
+        # Back Button
+        self.back_btn = ctk.CTkButton(
+            self.content_frame,
+            text="Back to Login",
             width=config.BUTTON_WIDTH,
             height=config.BUTTON_HEIGHT,
             fg_color="transparent",
             border_width=2,
             font=ctk.CTkFont(size=config.BUTTON_FONT_SIZE, weight="bold"),
-            command=self.master.show_register_screen
+            command=self.master.show_login_screen
         )
-        self.register_btn.grid(row=6, column=0, pady=(0, 40), padx=40)
+        self.back_btn.grid(row=5, column=0, pady=(0, 40), padx=40)
         
-        logger.info("Login screen displayed.")
+        logger.info("Register screen displayed.")
 
     def toggle_password_visibility(self):
         if self.password_entry.cget("show") == "*":
@@ -103,14 +95,15 @@ class LoginScreen(ctk.CTkFrame):
             self.password_entry.configure(show="*")
             self.show_password_btn.configure(text="Show")
 
-    def handle_login(self):
+    def handle_register(self):
         username = self.username_entry.get().strip()
         password = self.password_entry.get().strip()
         
-        success, message, session_data = self.auth_service.login_user(username, password)
+        success, message = self.auth_service.register_user(username, password)
         
         if success:
             self.status_label.configure(text=message, text_color="green")
-            self.after(500, lambda: self.master.show_dashboard_screen(session_data))
+            # Navigate back to login on success after 1 second
+            self.after(1000, self.master.show_login_screen)
         else:
             self.status_label.configure(text=message, text_color="red")
