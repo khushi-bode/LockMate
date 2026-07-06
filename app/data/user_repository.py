@@ -1,9 +1,10 @@
 from app.data.connection import get_db_connection
 from app.utils.logger import logger
 
+
 class UserRepository:
     """Handles data access for User entities."""
-    
+
     def create_user(self, username: str, password_hash: str, salt: str) -> int:
         """Inserts a new user into the database and returns the new ID."""
         sql = """
@@ -36,7 +37,7 @@ class UserRepository:
 
     def get_user_settings(self, user_id: int) -> dict:
         """Retrieves user settings or returns default."""
-        sql = "SELECT auto_lock_minutes FROM user_settings WHERE user_id = ?"
+        sql = "SELECT auto_lock_minutes, theme_mode, expiry_days FROM user_settings WHERE user_id = ?"
         try:
             with get_db_connection() as conn:
                 cursor = conn.cursor()
@@ -45,21 +46,33 @@ class UserRepository:
                 if row:
                     return dict(row)
                 else:
-                    return {'auto_lock_minutes': 5}
+                    return {
+                        "auto_lock_minutes": 5,
+                        "theme_mode": "System",
+                        "expiry_days": 0,
+                    }
         except Exception as e:
             logger.error(f"Error fetching settings for user {user_id}: {e}")
-            return {'auto_lock_minutes': 5}
+            return {"auto_lock_minutes": 5, "theme_mode": "System", "expiry_days": 0}
 
-    def update_user_settings(self, user_id: int, auto_lock_minutes: int) -> bool:
+    def update_user_settings(
+        self,
+        user_id: int,
+        auto_lock_minutes: int,
+        theme_mode: str = "System",
+        expiry_days: int = 0,
+    ) -> bool:
         """Updates user settings, inserting if not exists."""
         sql = """
-            INSERT OR REPLACE INTO user_settings (user_id, auto_lock_minutes)
-            VALUES (?, ?)
+            INSERT OR REPLACE INTO user_settings (user_id, auto_lock_minutes, theme_mode, expiry_days)
+            VALUES (?, ?, ?, ?)
         """
         try:
             with get_db_connection() as conn:
                 cursor = conn.cursor()
-                cursor.execute(sql, (user_id, auto_lock_minutes))
+                cursor.execute(
+                    sql, (user_id, auto_lock_minutes, theme_mode, expiry_days)
+                )
                 conn.commit()
                 return True
         except Exception as e:

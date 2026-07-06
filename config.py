@@ -48,5 +48,5 @@ TAGLINES = [
     "Protecting Your Digital Life",
     "Secure Today. Safe Tomorrow.",
     "Smart Passwords, Smarter Security.",
-    "One Vault. Complete Protection."
+    "One Vault. Complete Protection.",
 ]

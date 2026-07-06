@@ -1,86 +1,56 @@
-import json
 import os
-from app.security.encryption import CryptoService
-from app.core.vault_service import VaultService
+import shutil
+import sqlite3
 from app.utils.logger import logger
+import config
+
 
 class BackupService:
     def __init__(self):
-        self.crypto = CryptoService()
-        self.vault_service = VaultService()
+        pass
 
-    def export_vault(self, session_data: dict, backup_pw: str, file_path: str) -> bool:
-        """Exports the user's vault to an encrypted JSON file."""
+    def export_database(self, destination_path: str) -> bool:
+        """Exports the raw SQLite database."""
         try:
-            items = self.vault_service.get_all_items(session_data)
-            
-            # Prepare payload (we export the raw decrypted items)
-            payload = []
-            for item in items:
-                payload.append({
-                    'title': item['title'],
-                    'url': item.get('url', ''),
-                    'username': item.get('username', ''),
-                    'password': item.get('password', ''),
-                    'notes': item.get('notes', '')
-                })
-                
-            json_data = json.dumps(payload)
-            
-            # Generate a new salt for this backup file
-            salt = os.urandom(16).hex()
-            
-            # Encrypt the json data
-            encrypted_data = self.crypto.encrypt(backup_pw, salt, json_data)
-            
-            # Wrap in backup format
-            backup = {
-                'version': '1.0',
-                'salt': salt,
-                'data': encrypted_data
-            }
-            
-            with open(file_path, 'w', encoding='utf-8') as f:
-                json.dump(backup, f)
-                
-            logger.info(f"Vault exported successfully to {file_path}.")
+            logger.info("Backup started")
+            if not os.path.exists(config.DB_PATH):
+                logger.error("Database file not found.")
+                return False
+
+            shutil.copy2(config.DB_PATH, destination_path)
+            logger.info(f"Backup completed: copied to {destination_path}")
             return True
         except Exception as e:
-            logger.error(f"Error exporting vault: {e}")
+            logger.error(f"Error during backup: {e}")
             return False
-            
-    def import_vault(self, session_data: dict, backup_pw: str, file_path: str) -> bool:
-        """Imports vault items from an encrypted backup file."""
+
+    def import_database(self, source_path: str) -> bool:
+        """Imports an SQLite database and validates it."""
         try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                backup = json.load(f)
-                
-            if 'salt' not in backup or 'data' not in backup:
-                logger.error("Invalid backup file format.")
+            logger.info("Restore started")
+            if not os.path.exists(source_path):
+                logger.error("Source file not found.")
                 return False
-                
-            # Decrypt the payload
+
+            # Validate SQLite database
             try:
-                decrypted_json = self.crypto.decrypt(backup_pw, backup['salt'], backup['data'])
+                conn = sqlite3.connect(source_path)
+                cursor = conn.cursor()
+                cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
+                tables = [row[0] for row in cursor.fetchall()]
+                conn.close()
+
+                required_tables = {"users", "vault_items"}
+                if not required_tables.issubset(set(tables)):
+                    logger.error("Restore failed: Invalid LockMate database format.")
+                    return False
             except Exception as e:
-                logger.error(f"Failed to decrypt backup. Incorrect password? {e}")
+                logger.error(f"Restore failed: Not a valid SQLite database. {e}")
                 return False
-                
-            items = json.loads(decrypted_json)
-            
-            # Import items
-            for item in items:
-                self.vault_service.add_item(
-                    session_data,
-                    title=item.get('title', 'Imported Item'),
-                    url=item.get('url', ''),
-                    username=item.get('username', ''),
-                    password=item.get('password', ''),
-                    notes=item.get('notes', '')
-                )
-                
-            logger.info(f"Successfully imported {len(items)} items from {file_path}.")
+
+            shutil.copy2(source_path, config.DB_PATH)
+            logger.info("Restore completed")
             return True
         except Exception as e:
-            logger.error(f"Error importing vault: {e}")
+            logger.error(f"Error during restore: {e}")
             return False

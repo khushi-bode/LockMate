@@ -1,5 +1,5 @@
 -- Add updated_at column to vault_items
-ALTER TABLE vault_items ADD COLUMN updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+ALTER TABLE vault_items ADD COLUMN updated_at TIMESTAMP;
 
 -- Create user_settings table
 CREATE TABLE IF NOT EXISTS user_settings (

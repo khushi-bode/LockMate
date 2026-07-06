@@ -4,3 +4,240 @@
 [2026-07-05 23:21:08,021] INFO in splash: Splash screen initialized with tagline: 'One Vault. Complete Protection.'
 [2026-07-05 23:21:08,022] INFO in main: LockMate UI initialized successfully.
 [2026-07-05 23:21:11,034] INFO in login: Login screen displayed.
+[2026-07-06 00:03:43,427] INFO in main: Starting LockMate application bootstrap...
+[2026-07-06 00:03:43,439] INFO in connection: Successfully executed SQL script: C:\Users\ASUS\OneDrive\Documents\Projects\LockMate\app\data\migrations\001_initial_schema.sql
+[2026-07-06 00:03:43,625] INFO in splash: Splash screen initialized with tagline: 'Protecting Your Digital Life'
+[2026-07-06 00:03:43,625] INFO in main: LockMate UI initialized successfully.
+[2026-07-06 00:03:46,666] INFO in login: Login screen displayed.
+[2026-07-06 00:03:50,596] INFO in main: LockMate application closed.
+[2026-07-06 00:04:00,897] INFO in main: Starting LockMate application bootstrap...
+[2026-07-06 00:04:00,898] INFO in connection: Successfully executed SQL script: C:\Users\ASUS\OneDrive\Documents\Projects\LockMate\app\data\migrations\001_initial_schema.sql
+[2026-07-06 00:04:01,048] INFO in splash: Splash screen initialized with tagline: 'Your Trusted Password Companion'
+[2026-07-06 00:04:01,049] INFO in main: LockMate UI initialized successfully.
+[2026-07-06 00:04:04,080] INFO in login: Login screen displayed.
+[2026-07-06 00:07:22,760] INFO in register: Register screen displayed.
+[2026-07-06 00:07:43,420] INFO in user_repository: User 'khushibode' created successfully.
+[2026-07-06 00:07:43,420] INFO in auth: User 'khushibode' registered successfully.
+[2026-07-06 00:07:44,463] INFO in login: Login screen displayed.
+[2026-07-06 00:08:06,709] INFO in auth: User 'khushibode' logged in successfully.
+[2026-07-06 00:08:07,280] INFO in dashboard: Dashboard screen displayed for user: khushibode
+[2026-07-06 00:09:55,449] INFO in vault_repository: Vault item 'codetantra' added for user_id=1.
+[2026-07-06 00:10:10,546] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:12,473] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:14,906] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:15,758] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:18,328] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:23,742] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:35,361] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:36,440] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:36,657] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:37,905] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:38,087] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:38,273] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:38,482] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:38,805] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:38,981] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:39,176] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:39,401] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:39,633] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:39,882] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:40,132] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:40,368] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:40,605] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:40,817] ERROR in vault_repository: Failed to update vault item 1: no such column: updated_at
+[2026-07-06 00:10:57,253] INFO in vault_repository: Deleted vault item 1.
+[2026-07-06 00:11:01,484] INFO in password_generator: Password Generator screen displayed.
+[2026-07-06 00:11:59,502] INFO in password_generator: Password copied to clipboard.
+[2026-07-06 00:12:27,349] INFO in vault_repository: Vault item 'khushi' added for user_id=1.
+[2026-07-06 00:12:27,350] INFO in password_generator: Generated password saved to vault as 'khushi'.
+[2026-07-06 00:12:29,778] ERROR in user_repository: Error fetching settings for user 1: no such table: user_settings
+[2026-07-06 00:13:50,477] ERROR in vault_repository: Failed to update vault item 2: no such column: updated_at
+[2026-07-06 00:13:51,251] ERROR in vault_repository: Failed to update vault item 2: no such column: updated_at
+[2026-07-06 00:13:51,480] ERROR in vault_repository: Failed to update vault item 2: no such column: updated_at
+[2026-07-06 00:13:51,697] ERROR in vault_repository: Failed to update vault item 2: no such column: updated_at
+[2026-07-06 00:13:52,884] ERROR in vault_repository: Failed to update vault item 2: no such column: updated_at
+[2026-07-06 00:19:01,205] INFO in main: Session auto-locked due to inactivity.
+[2026-07-06 00:19:01,206] INFO in dashboard: User khushibode logged out.
+[2026-07-06 00:19:01,292] INFO in login: Login screen displayed.
+[2026-07-06 00:23:19,424] INFO in main: Starting LockMate application bootstrap...
+[2026-07-06 00:23:19,434] ERROR in connection: Failed to execute SQL script C:\Users\ASUS\OneDrive\Documents\Projects\LockMate\app\data\migrations\002_add_updated_at_and_settings.sql: Cannot add a column with non-constant default
+[2026-07-06 00:23:19,434] ERROR in connection: Critical error applying migration 002_add_updated_at_and_settings.sql: Cannot add a column with non-constant default
+[2026-07-06 00:23:19,617] INFO in splash: Splash screen initialized with tagline: 'Your Trusted Password Companion'
+[2026-07-06 00:23:19,617] INFO in main: LockMate UI initialized successfully.
+[2026-07-06 00:23:22,657] INFO in login: Login screen displayed.
+[2026-07-06 00:23:45,850] WARNING in auth: Failed login attempt for user 'khushibode'.
+[2026-07-06 00:23:50,587] WARNING in auth: Failed login attempt for user 'khushibode'.
+[2026-07-06 00:23:51,380] WARNING in auth: Failed login attempt for user 'khushibode'.
+[2026-07-06 00:23:51,606] WARNING in auth: Failed login attempt for user 'khushibode'.
+[2026-07-06 00:23:51,817] WARNING in auth: Failed login attempt for user 'khushibode'.
+[2026-07-06 00:23:54,619] WARNING in auth: Failed login attempt for user 'khushibode'.
+[2026-07-06 00:24:05,643] WARNING in auth: Failed login attempt for user 'khushibode'.
+[2026-07-06 00:24:06,323] WARNING in auth: Failed login attempt for user 'khushibode'.
+[2026-07-06 00:24:06,534] WARNING in auth: Failed login attempt for user 'khushibode'.
+[2026-07-06 00:24:09,415] WARNING in auth: Failed login attempt for user 'khushibode'.
+[2026-07-06 00:24:11,785] INFO in register: Register screen displayed.
+[2026-07-06 00:24:31,538] INFO in user_repository: User 'siddhesh' created successfully.
+[2026-07-06 00:24:31,539] INFO in auth: User 'siddhesh' registered successfully.
+[2026-07-06 00:24:32,582] INFO in login: Login screen displayed.
+[2026-07-06 00:24:43,998] INFO in auth: User 'siddhesh' logged in successfully.
+[2026-07-06 00:24:44,560] INFO in dashboard: Dashboard screen displayed for user: siddhesh
+[2026-07-06 00:25:03,286] INFO in vault_repository: Vault item 'khushi' added for user_id=2.
+[2026-07-06 00:25:14,849] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:15,974] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:17,727] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:17,951] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:18,176] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:18,423] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:18,629] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:18,852] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:19,076] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:19,502] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:19,728] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:22,630] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:22,847] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:24,167] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:24,377] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:25:24,602] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:28:43,644] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:28:44,742] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:28:44,992] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:28:45,255] ERROR in vault_repository: Failed to update vault item 3: no such column: updated_at
+[2026-07-06 00:33:46,767] INFO in main: Session auto-locked due to inactivity.
+[2026-07-06 00:33:46,767] INFO in dashboard: User siddhesh logged out.
+[2026-07-06 00:33:46,879] INFO in login: Login screen displayed.
+[2026-07-06 00:37:56,708] INFO in auth: User 'siddhesh' logged in successfully.
+[2026-07-06 00:37:57,471] INFO in dashboard: Dashboard screen displayed for user: siddhesh
+[2026-07-06 12:26:09,768] INFO in connection: Successfully executed SQL script: C:\Users\ASUS\OneDrive\Documents\Projects\LockMate\app\data\migrations\002_add_updated_at_and_settings.sql
+[2026-07-06 12:26:09,771] INFO in connection: Successfully applied migration: 002_add_updated_at_and_settings.sql
+[2026-07-06 12:26:09,970] INFO in user_repository: User 'testuser_edit' created successfully.
+[2026-07-06 12:26:09,970] INFO in auth: User 'testuser_edit' registered successfully.
+[2026-07-06 12:26:41,657] INFO in user_repository: User 'testuser_edit2' created successfully.
+[2026-07-06 12:26:41,657] INFO in auth: User 'testuser_edit2' registered successfully.
+[2026-07-06 12:26:41,853] INFO in auth: User 'testuser_edit2' logged in successfully.
+[2026-07-06 12:26:41,965] INFO in vault_repository: Vault item 'My Bank' added for user_id=4.
+[2026-07-06 12:26:41,965] INFO in vault_service: VaultService: Updating item 4 for user testuser_edit2
+[2026-07-06 12:26:42,069] INFO in vault_repository: Updated vault item 4.
+[2026-07-06 12:29:53,538] INFO in main: Starting LockMate application bootstrap...
+[2026-07-06 12:29:53,771] INFO in splash: Splash screen initialized with tagline: 'One Vault. Complete Protection.'
+[2026-07-06 12:29:53,771] INFO in main: LockMate UI initialized successfully.
+[2026-07-06 12:29:56,809] INFO in login: Login screen displayed.
+[2026-07-06 12:30:09,553] INFO in auth: User 'siddhesh' logged in successfully.
+[2026-07-06 12:30:10,331] INFO in dashboard: Dashboard screen displayed for user: siddhesh
+[2026-07-06 12:30:19,629] INFO in dashboard: Dashboard: Saving edit for item ID 3
+[2026-07-06 12:30:19,629] INFO in vault_service: VaultService: Updating item 3 for user siddhesh
+[2026-07-06 12:30:19,730] INFO in vault_repository: Updated vault item 3.
+[2026-07-06 12:35:22,197] INFO in main: Session auto-locked due to inactivity.
+[2026-07-06 12:35:22,197] INFO in dashboard: User siddhesh logged out.
+[2026-07-06 12:35:22,299] INFO in login: Login screen displayed.
+[2026-07-06 12:47:04,586] INFO in user_repository: User 'delete_test_user' created successfully.
+[2026-07-06 12:47:04,587] INFO in auth: User 'delete_test_user' registered successfully.
+[2026-07-06 12:47:04,789] INFO in auth: User 'delete_test_user' logged in successfully.
+[2026-07-06 12:47:04,894] INFO in vault_repository: Vault item 'DeleteTarget' added for user_id=5.
+[2026-07-06 12:47:04,997] INFO in vault_repository: Deleted vault item 5.
+[2026-07-06 12:47:04,997] INFO in vault_service: VaultService: Delete successful for item 5
+[2026-07-06 12:47:05,198] INFO in auth: User 'delete_test_user' logged in successfully.
+[2026-07-06 12:58:13,689] INFO in user_repository: User 'search_test_user' created successfully.
+[2026-07-06 12:58:13,689] INFO in auth: User 'search_test_user' registered successfully.
+[2026-07-06 12:58:13,883] INFO in auth: User 'search_test_user' logged in successfully.
+[2026-07-06 12:58:13,991] INFO in vault_repository: Vault item 'Google Account' added for user_id=6.
+[2026-07-06 12:58:14,094] INFO in vault_repository: Vault item 'Amazon Shop' added for user_id=6.
+[2026-07-06 12:58:14,198] INFO in vault_repository: Vault item 'Twitter / X' added for user_id=6.
+[2026-07-06 12:58:14,299] INFO in vault_repository: Vault item 'Netflix' added for user_id=6.
+[2026-07-06 12:58:14,299] INFO in vault_service: VaultService: Searching for '' by user search_test_user
+[2026-07-06 12:58:15,112] INFO in vault_service: VaultService: Searching for 'goog' by user search_test_user
+[2026-07-06 12:58:15,218] INFO in vault_service: VaultService: Searching for 'netflix.com' by user search_test_user
+[2026-07-06 12:58:15,318] INFO in vault_service: VaultService: Searching for 'AMAZONBUYER' by user search_test_user
+[2026-07-06 12:58:15,419] INFO in vault_service: VaultService: Searching for 'nonexistentstring' by user search_test_user
+[2026-07-06 13:09:51,101] INFO in connection: Successfully executed SQL script: C:\Users\ASUS\OneDrive\Documents\Projects\LockMate\app\data\migrations\003_add_favorites.sql
+[2026-07-06 13:09:51,106] INFO in connection: Successfully applied migration: 003_add_favorites.sql
+[2026-07-06 13:09:51,335] INFO in user_repository: User 'fav_test_user' created successfully.
+[2026-07-06 13:09:51,336] INFO in auth: User 'fav_test_user' registered successfully.
+[2026-07-06 13:09:51,557] INFO in auth: User 'fav_test_user' logged in successfully.
+[2026-07-06 13:09:51,690] INFO in vault_repository: Vault item 'FavTest' added for user_id=7.
+[2026-07-06 13:09:51,694] INFO in vault_repository: Favorite Added for item 10.
+[2026-07-06 13:09:51,915] INFO in auth: User 'fav_test_user' logged in successfully.
+[2026-07-06 13:09:52,039] INFO in vault_repository: Favorite Removed for item 10.
+[2026-07-06 13:09:52,043] INFO in vault_repository: Favorite Added for item 10.
+[2026-07-06 13:28:07,509] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:28:07,510] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:28:07,510] ERROR in vault_service: Failed to decrypt password for item 2: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:28:07,511] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:28:07,511] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:28:07,512] ERROR in vault_service: Failed to decrypt password for item 2: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:28:08,519] INFO in dashboard: Dashboard screen displayed for user: test
+[2026-07-06 13:31:30,664] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:31:30,664] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:31:30,665] ERROR in vault_service: Failed to decrypt password for item 2: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:31:30,666] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:31:30,666] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:31:30,666] ERROR in vault_service: Failed to decrypt password for item 2: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:31:31,623] INFO in dashboard: Dashboard screen displayed for user: test
+[2026-07-06 13:35:44,344] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:35:44,344] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:35:44,344] ERROR in vault_service: Failed to decrypt password for item 2: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:35:44,345] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:35:44,346] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:35:44,346] ERROR in vault_service: Failed to decrypt password for item 2: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:35:45,051] INFO in dashboard: Dashboard screen displayed for user: test
+[2026-07-06 13:43:07,915] INFO in settings: Exported vault to plaintext format.
+[2026-07-06 13:43:07,923] INFO in settings: Exported vault to plaintext format.
+[2026-07-06 13:51:04,492] INFO in connection: Successfully executed SQL script: C:\Users\ASUS\OneDrive\Documents\Projects\LockMate\app\data\migrations\004_add_category.sql
+[2026-07-06 13:51:04,497] INFO in connection: Successfully applied migration: 004_add_category.sql
+[2026-07-06 13:51:04,502] INFO in connection: Successfully executed SQL script: C:\Users\ASUS\OneDrive\Documents\Projects\LockMate\app\data\migrations\005_add_theme_mode.sql
+[2026-07-06 13:51:04,507] INFO in connection: Successfully applied migration: 005_add_theme_mode.sql
+[2026-07-06 13:51:04,510] ERROR in user_repository: Failed to update settings for user 999: FOREIGN KEY constraint failed
+[2026-07-06 13:59:42,760] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:59:42,760] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:59:42,760] ERROR in vault_service: Failed to decrypt password for item 2: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:59:42,761] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:59:42,761] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:59:42,761] ERROR in vault_service: Failed to decrypt password for item 2: 'bytes' object has no attribute 'encode'
+[2026-07-06 13:59:43,562] INFO in dashboard: Dashboard screen displayed for user: test
+[2026-07-06 13:59:43,659] INFO in dashboard: Manual vault lock initiated.
+[2026-07-06 13:59:43,659] INFO in dashboard: Session cleared.
+[2026-07-06 13:59:43,693] INFO in dashboard: Login screen restored.
+[2026-07-06 14:03:56,488] INFO in backup_service: Backup started
+[2026-07-06 14:03:56,491] INFO in backup_service: Backup completed: copied to test_backup.db
+[2026-07-06 14:03:56,495] INFO in backup_service: Restore started
+[2026-07-06 14:03:56,498] INFO in backup_service: Restore completed
+[2026-07-06 14:08:17,794] INFO in connection: Successfully executed SQL script: C:\Users\ASUS\OneDrive\Documents\Projects\LockMate\app\data\migrations\006_add_expiry_setting.sql
+[2026-07-06 14:08:17,798] INFO in connection: Successfully applied migration: 006_add_expiry_setting.sql
+[2026-07-06 14:08:18,030] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,030] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,030] ERROR in vault_service: Failed to decrypt password for item 701: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,030] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,030] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,030] ERROR in vault_service: Failed to decrypt password for item 702: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,030] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,030] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,030] ERROR in vault_service: Failed to decrypt password for item 703: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,038] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,038] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,038] ERROR in vault_service: Failed to decrypt password for item 701: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,038] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,038] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,038] ERROR in vault_service: Failed to decrypt password for item 702: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,038] ERROR in encryption: Failed to derive key: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,038] ERROR in encryption: Decryption failed: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,038] ERROR in vault_service: Failed to decrypt password for item 703: 'bytes' object has no attribute 'encode'
+[2026-07-06 14:08:18,868] INFO in dashboard: Dashboard screen displayed for user: expirytest
+[2026-07-06 14:47:53,265] INFO in auth: User 'siddhesh' logged in successfully.
+[2026-07-06 14:47:54,136] INFO in dashboard: Dashboard screen displayed for user: siddhesh
+[2026-07-06 14:49:24,385] INFO in vault_repository: Vault item 'khushibode5@gmail.com' added for user_id=2.
+[2026-07-06 14:49:34,228] INFO in dashboard: Dashboard: Saving edit for item ID 1000
+[2026-07-06 14:49:34,228] INFO in vault_service: VaultService: Updating item 1000 for user siddhesh
+[2026-07-06 14:49:34,348] INFO in vault_repository: Updated vault item 1000.
+[2026-07-06 14:49:42,866] INFO in dashboard: Dashboard: Saving edit for item ID 1000
+[2026-07-06 14:49:42,866] INFO in vault_service: VaultService: Updating item 1000 for user siddhesh
+[2026-07-06 14:49:42,988] INFO in vault_repository: Updated vault item 1000.
+[2026-07-06 14:49:52,211] INFO in password_generator: Password Generator screen displayed.
+[2026-07-06 14:55:51,278] INFO in main: Session auto-locked due to inactivity.
+[2026-07-06 14:55:51,279] INFO in dashboard: User siddhesh logged out.
+[2026-07-06 14:55:51,363] INFO in login: Login screen displayed.
+[2026-07-06 15:06:38,520] INFO in auth: User 'siddhesh' logged in successfully.
+[2026-07-06 15:06:39,778] INFO in dashboard: Dashboard screen displayed for user: siddhesh
+[2026-07-06 15:07:05,052] INFO in vault_repository: Vault item 'mit' added for user_id=2.
+[2026-07-06 15:07:39,460] INFO in password_generator: Password Generator screen displayed.
+[2026-07-06 15:13:19,497] INFO in main: Session auto-locked due to inactivity.
+[2026-07-06 15:13:19,497] INFO in dashboard: User siddhesh logged out.
+[2026-07-06 15:13:19,578] INFO in login: Login screen displayed.
