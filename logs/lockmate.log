@@ -241,3 +241,14 @@
 [2026-07-06 15:13:19,497] INFO in main: Session auto-locked due to inactivity.
 [2026-07-06 15:13:19,497] INFO in dashboard: User siddhesh logged out.
 [2026-07-06 15:13:19,578] INFO in login: Login screen displayed.
+[2026-07-06 16:00:54,872] INFO in main: Starting LockMate application bootstrap...
+[2026-07-06 16:00:55,138] INFO in splash: Splash screen initialized with tagline: 'Protecting Your Digital Life'
+[2026-07-06 16:00:55,139] INFO in main: LockMate UI initialized successfully.
+[2026-07-06 16:00:58,206] INFO in login: Login screen displayed.
+[2026-07-06 16:01:42,481] INFO in auth: User 'siddhesh' logged in successfully.
+[2026-07-06 16:01:43,722] INFO in dashboard: Dashboard screen displayed for user: siddhesh
+[2026-07-06 16:02:03,751] INFO in password_generator: Password Generator screen displayed.
+[2026-07-06 16:03:47,184] INFO in dashboard: User siddhesh logged out.
+[2026-07-06 16:03:47,236] INFO in login: Login screen displayed.
+[2026-07-06 16:03:57,740] INFO in auth: User 'siddhesh' logged in successfully.
+[2026-07-06 16:03:58,935] INFO in dashboard: Dashboard screen displayed for user: siddhesh

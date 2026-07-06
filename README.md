@@ -87,11 +87,11 @@ LockMate employs a strict 3-tier architecture to ensure logic separation and lon
 > *Example UI configurations are displayed below.*
 
 <div align="center">
+  <img src="https://dummyimage.com/600x400/2c3e50/ffffff&text=Login+Screen" alt="Login" width="45%">
   <img src="https://dummyimage.com/600x400/2c3e50/ffffff&text=Dashboard+View" alt="Dashboard" width="45%">
-  <img src="https://dummyimage.com/600x400/2c3e50/ffffff&text=Settings+View" alt="Settings" width="45%">
   <br>
   <img src="https://dummyimage.com/600x400/2c3e50/ffffff&text=Password+Generator" alt="Generator" width="45%">
-  <img src="https://dummyimage.com/600x400/2c3e50/ffffff&text=About+Dialog" alt="About" width="45%">
+  <img src="https://dummyimage.com/600x400/2c3e50/ffffff&text=Settings+View" alt="Settings" width="45%">
 </div>
 
 ---
