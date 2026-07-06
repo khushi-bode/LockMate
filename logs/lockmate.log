@@ -252,3 +252,12 @@
 [2026-07-06 16:03:47,236] INFO in login: Login screen displayed.
 [2026-07-06 16:03:57,740] INFO in auth: User 'siddhesh' logged in successfully.
 [2026-07-06 16:03:58,935] INFO in dashboard: Dashboard screen displayed for user: siddhesh
+[2026-07-06 16:10:11,618] INFO in main: Session auto-locked due to inactivity.
+[2026-07-06 16:10:11,619] INFO in dashboard: User siddhesh logged out.
+[2026-07-06 16:10:11,724] INFO in login: Login screen displayed.
+[2026-07-06 16:32:11,262] INFO in auth: User 'siddhesh' logged in successfully.
+[2026-07-06 16:32:12,468] INFO in dashboard: Dashboard screen displayed for user: siddhesh
+[2026-07-06 16:32:15,127] INFO in password_generator: Password Generator screen displayed.
+[2026-07-06 16:37:23,026] INFO in main: Session auto-locked due to inactivity.
+[2026-07-06 16:37:23,027] INFO in dashboard: User siddhesh logged out.
+[2026-07-06 16:37:23,135] INFO in login: Login screen displayed.
